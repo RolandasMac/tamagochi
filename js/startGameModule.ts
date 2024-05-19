@@ -32,7 +32,7 @@ function createAnimalPage(arr:string[]):void{
 
 
 function chooseAnimal(event:MouseEvent):void{
-    console.log(event.target as HTMLImageElement);
+    // console.log(event.target as HTMLImageElement);
     // console.log(mainLiveStock)
     mainLiveStock.src=`${(event.target as HTMLImageElement).src}`
     animalPage.classList.add("d-none");

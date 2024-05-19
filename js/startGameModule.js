@@ -14,12 +14,13 @@ function createAnimalPage(arr) {
         const img = document.createElement('img');
         img.addEventListener('click', chooseAnimal);
         img.src = `../css/images/${oneAnimal}`;
+        console.log(img.src);
         oneAnimalContainer.appendChild(img);
         animalPage.appendChild(oneAnimalContainer);
     });
 }
 function chooseAnimal(event) {
-    console.log(event.target);
+    // console.log(event.target as HTMLImageElement);
     // console.log(mainLiveStock)
     mainLiveStock.src = `${event.target.src}`;
     animalPage.classList.add("d-none");
