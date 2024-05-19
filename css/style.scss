@@ -1,0 +1,66 @@
+h1 {
+  color: red;
+}
+#choseAnimal{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.animal{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    //&:nth-child(n){
+    //  font-size: 56px;
+    //}
+  img{
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+
+#mainGamePage{
+  border: 1px solid black;
+  height: 600px;
+  width: 1000px;
+}
+.mainWindow{
+  position: relative;
+  border: 1px solid red;
+  height: 90%;
+  width: 100%;
+  background-image: url("https://nystudio107.com/img/blog/_1200x675_crop_center-center_82_line/craft-cms-custom-field-leveraging-platform-2.jpg.webp");
+    img{
+      position: absolute;
+      //width: 10%;
+      height: 10%;
+      top: 50%;
+      left: 50%;
+    }
+}
+.infoBar{
+  border: 1px solid green;
+  height: 10%;
+  width: 100%;
+}
+.statusBar{
+  //border: 1px solid red;
+  height: 20px;
+  width: 20%;
+  display: flex;
+  .progressBar{
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+    .progressLine{
+      height: 100%;
+      width: 70%;
+      background-color: green;
+    }
+  }
+}
