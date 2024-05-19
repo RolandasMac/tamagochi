@@ -45,19 +45,19 @@ function startGame():void{
 
 function hungry(){
     if(feedCount>0){
-        feedCount -= 10;
+        feedCount -= 1;
         progres[1].style.width = `${feedCount}%` ;
     }
 }
 function angry(){
     if(funyCount>0){
-        funyCount -= 10;
+        funyCount -= 1;
         progres[2].style.width = `${funyCount}%` ;
     }
 }
 function live(){
     if(liveCount>0){
-        liveCount -= 10;
+        liveCount -= 1;
         progres[0].style.width = `${liveCount}%` ;
     }
 }
