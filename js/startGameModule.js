@@ -18,10 +18,10 @@ function createAnimalPage(arr) {
         animalPage.appendChild(oneAnimalContainer);
     });
 }
-function chooseAnimal(e) {
-    console.log(e.target);
+function chooseAnimal(event) {
+    console.log(event.target);
     // console.log(mainLiveStock)
-    mainLiveStock.src = `${e.target.src}`;
+    mainLiveStock.src = `${event.target.src}`;
     animalPage.classList.add("d-none");
     mainGamePage.classList.remove('d-none');
 }
