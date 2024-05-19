@@ -22,7 +22,7 @@ function createAnimalPage(arr:string[]):void{
         // oneAnimalContainer.innerHTML = oneAnimal;
         const img:HTMLImageElement = document.createElement('img');
         img.addEventListener('click', chooseAnimal)
-        img.src=`../../css/images/${oneAnimal}`;
+        img.src=`./css/images/${oneAnimal}`;
         console.log(img.src);
         oneAnimalContainer.appendChild(img);
         animalPage.appendChild(oneAnimalContainer);
