@@ -16,7 +16,7 @@ btnList[2].addEventListener('click', (event) => {
 });
 mainWindow.addEventListener('click', (event) => {
     // console.log((event.target) as HTMLElement);
-    console.log(event.clientX, event.clientY);
+    // console.log(event.clientX, event.clientY);
     let top = 0;
     if (event.clientY > 550) {
         top = 435;

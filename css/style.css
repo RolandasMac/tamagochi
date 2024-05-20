@@ -55,7 +55,7 @@ h1 {
 
 @keyframes bega {
   0% {
-    left: 10%;
+    left: 0;
     rotate: y 0deg;
   }
   50% {
@@ -67,11 +67,11 @@ h1 {
     rotate: y 180deg;
   }
   99% {
-    left: 11%;
+    left: 1%;
     rotate: y 180deg;
   }
   100% {
-    left: 10%;
+    left: 0;
     rotate: y 0deg;
   }
 }
