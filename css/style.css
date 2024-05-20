@@ -52,6 +52,7 @@ h1 {
 }
 .mainWindow .mainAnimal img {
   height: 990px;
+  top: -305px;
   left: 0px;
   position: absolute;
 }

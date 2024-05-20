@@ -24,8 +24,7 @@ function chooseAnimal(event) {
     // console.log(event.target as HTMLImageElement);
     // console.log(mainLiveStock)
     mainLiveStock.src = `${event.target.src}`;
-    mainLiveStock.style.top = `-${event.target.style.top}px`;
-    console.log(mainLiveStock.style.top);
+    mainLiveStock.style.top = `${event.target.style.top}`;
     animalPage.classList.add("d-none");
     mainGamePage.classList.remove('d-none');
 }

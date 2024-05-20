@@ -27,7 +27,6 @@ btnList[1].addEventListener('click', (event)=>{
 
 
 
-
 console.log(Number((Array.from(progres[1].style.width)).slice(0,-1).join("")))
 
 startGame();

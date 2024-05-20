@@ -30,13 +30,11 @@ function createAnimalPage(arr:string[][]):void{
 
 }
 
-
 function chooseAnimal(event:MouseEvent):void{
     // console.log(event.target as HTMLImageElement);
     // console.log(mainLiveStock)
-    mainLiveStock.src=`${(event.target as HTMLImageElement).src}`
-    mainLiveStock.style.top=`-${(event.target as HTMLImageElement).style.top}px`
-    console.log(mainLiveStock.style.top);
+    mainLiveStock.src=`${(event.target as HTMLImageElement).src}`;
+    mainLiveStock.style.top=`${(event.target as HTMLImageElement).style.top}`
     animalPage.classList.add("d-none");
     mainGamePage.classList.remove('d-none');
 }

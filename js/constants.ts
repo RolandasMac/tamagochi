@@ -25,6 +25,8 @@ export const livestock:string[][] = [
     ['SeekPng.png',  '400','0']
 
 ]
+
+
 export const animalPage = document.querySelector('#choseAnimal') as HTMLElement;
 export const btnList = document.querySelectorAll('.btns') as NodeListOf<HTMLElement>;
 export const mainGamePage = document.querySelector('#mainGamePage') as HTMLElement;
