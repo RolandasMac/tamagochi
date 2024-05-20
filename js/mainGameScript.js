@@ -1,4 +1,4 @@
-import { btnList, mainGamePage, animalPage, progres, mainLiveStock } from "./constants.js";
+import { btnList, mainGamePage, animalPage, progres, mainLiveStock, leftPosition } from "./constants.js";
 // console.log("test")
 export let test = "test Main Game";
 // console.log(progres);
@@ -25,6 +25,8 @@ btnList[1].addEventListener('click', (event) => {
 console.log(Number((Array.from(progres[1].style.width)).slice(0, -1).join("")));
 startGame();
 function startGame() {
+    let position = leftPosition;
+    // let positionTop = topPosition;
     setInterval(() => {
         hungry();
         angry();
@@ -33,6 +35,13 @@ function startGame() {
             live();
         }
     }, 1000);
+    setInterval(() => {
+        mainLiveStock.style.left = `-${position}px`;
+        position += 100;
+        if (position === 800) {
+            position = leftPosition;
+        }
+    }, 200);
 }
 function hungry() {
     if (feedCount > 0) {
