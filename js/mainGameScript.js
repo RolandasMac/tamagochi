@@ -1,4 +1,4 @@
-import { btnList, mainGamePage, animalPage, progres, mainLiveStock, leftPosition } from "./constants.js";
+import { btnList, mainGamePage, animalPage, progres, mainLiveStock, leftPosition, mainWindow } from "./constants.js";
 // console.log("test")
 export let test = "test Main Game";
 // console.log(progres);
@@ -14,6 +14,19 @@ btnList[2].addEventListener('click', (event) => {
     mainGamePage.classList.add('d-none');
     animalPage.classList.remove('d-none');
 });
+mainWindow.addEventListener('click', (event) => {
+    // console.log((event.target) as HTMLElement);
+    console.log(event.clientX, event.clientY);
+    let top = 0;
+    if (event.clientY > 550) {
+        top = 435;
+    }
+    else {
+        top = event.clientY - 115;
+    }
+    mainLiveStock.parentElement.style.top = `${top}px`;
+    // mainLiveStock.style.top=`${event.clientY}px`;
+});
 btnList[0].addEventListener('click', (event) => {
     progres[1].style.width = "100%";
     feedCount = 100;
@@ -22,7 +35,7 @@ btnList[1].addEventListener('click', (event) => {
     progres[2].style.width = "100%";
     funyCount = 100;
 });
-console.log(Number((Array.from(progres[1].style.width)).slice(0, -1).join("")));
+// console.log(Number((Array.from(progres[1].style.width)).slice(0,-1).join("")))
 startGame();
 function startGame() {
     let position = leftPosition;

@@ -32,3 +32,4 @@ export const progres = document.querySelectorAll('.progressLine');
 export const mainLiveStock = document.querySelector('#mainLiveStock');
 export let leftPosition = 0;
 export let topPosition = 0;
+export const mainWindow = document.querySelector('#mainWindow');

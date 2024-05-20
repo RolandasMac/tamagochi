@@ -34,4 +34,5 @@ export const progres = document.querySelectorAll('.progressLine') as NodeListOf<
 export const mainLiveStock = document.querySelector('#mainLiveStock') as HTMLImageElement;
 export let leftPosition = 0;
 export let topPosition = 0;
+export const mainWindow = document.querySelector('#mainWindow') as HTMLElement;
 
