@@ -10,7 +10,6 @@ h1 {
 
 .animal {
   position: relative;
-  border: 1px solid black;
   border-radius: 10px;
   height: 75px;
   width: 100px;
@@ -32,7 +31,6 @@ h1 {
 
 .mainWindow {
   position: relative;
-  border: 1px solid red;
   height: 90%;
   width: 100%;
   background-image: url("https://nystudio107.com/img/blog/_1200x675_crop_center-center_82_line/craft-cms-custom-field-leveraging-platform-2.jpg.webp");
@@ -80,7 +78,6 @@ h1 {
   }
 }
 .infoBar {
-  border: 1px solid green;
   height: 10%;
   width: 100%;
 }
@@ -94,8 +91,10 @@ h1 {
   height: 100%;
   width: 100%;
   border: 1px solid green;
+  border-radius: 10px;
 }
 .statusBar .progressBar .progressLine {
+  border-radius: 10px;
   height: 100%;
   width: 70%;
   background-color: green;

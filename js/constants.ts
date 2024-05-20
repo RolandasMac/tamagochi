@@ -21,9 +21,9 @@ export const livestock:string[][] = [
     // 'cow1.png',
     // 'cow2.png',
     // '7897057.jpg',
-    ['SeekPng.png',  '300','0'],
-    ['SeekPng.png',  '400','0']
-
+    ['SeekPng.png',  '303','0'],
+    ['SeekPng.png',  '406','0'],
+    ['SeekPng.png',  '509','0']
 ]
 
 
