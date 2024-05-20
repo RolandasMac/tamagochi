@@ -1,4 +1,4 @@
-import { btnList, mainGamePage, animalPage, progres } from "./constants.js";
+import { btnList, mainGamePage, animalPage, progres, mainLiveStock } from "./constants.js";
 // console.log("test")
 export let test = "test Main Game";
 // console.log(progres);
@@ -50,5 +50,8 @@ function live() {
     if (liveCount > 0) {
         liveCount -= 1;
         progres[0].style.width = `${liveCount}%`;
+    }
+    else {
+        mainLiveStock.src = "";
     }
 }
