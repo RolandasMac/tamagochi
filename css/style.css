@@ -49,8 +49,12 @@ h1 {
 .mainWindow .mainAnimal img {
   height: 990px;
   top: -305px;
-  left: 0px;
+  left: 0;
   position: absolute;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @keyframes bega {
